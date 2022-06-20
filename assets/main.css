@@ -3,6 +3,18 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden; width: 100vw;
 }
+hr.hor{
+    border-top: white 1px solid;
+    width: 60%;
+    transition: width 1s;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    margin-top: 4rem;
+}
+hr.hor:hover{
+    width: 80%;
+}
 .navbar img{
     margin-left: 30%;
     width: 100%;
@@ -80,6 +92,10 @@ p{
 .my-img{
     width: 20%;
     border-radius: 100%;
+    transition: width 1s;
+}
+.my-img:hover{
+    width: 22%;
 }
 
 .about-img{
@@ -113,9 +129,7 @@ p{
     background-color: #C81912 !important;
 }
 
-#section-4, #section-5, #section-6, #section-7, #section-8{
-    padding-top: 4rem;
-}
+
 .progress{
     background-color: black !important;
 }
@@ -135,6 +149,8 @@ p{
     column-gap: 2rem;
     row-gap: 2rem;
 }
+
+
 .projects .certificates div{
     height: 140px;
     width: 100%;
@@ -187,7 +203,8 @@ p{
 .period{
     text-align: left;
     display: grid;
-    align-items: center;
+    align-items: top;
+    padding-top: 0.5rem;
 }
 .branch{
     font-size: 1.3rem;
@@ -200,8 +217,22 @@ p{
     padding-bottom: 4rem;
 }
 
-@media only screen and (max-width:375px) {
-    body{
-        
+@media only screen and (max-width:400px) {
+    .certificates{
+        grid-template-columns: 100%;
+    }
+    .certificates embed{
+        width: 300px;
+        height: 213px;
+    }
+    .clg-name{
+        font-size: 1.3rem;
+    }
+    .period{
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    .branch{
+        font-size: 1rem;
     }
 }
